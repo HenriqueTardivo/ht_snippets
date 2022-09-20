@@ -1,0 +1,21 @@
+{
+  "name": "ht-snippets",
+  "displayName": "ht_snippets",
+  "description": "Snippets for base components with Node, React or Vue",
+  "version": "1.0.0",
+  "icon": "./assets/HT.png",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

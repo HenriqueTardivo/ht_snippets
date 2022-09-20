@@ -1,0 +1,40 @@
+{
+    "Typescript Node Base Controller":{
+        "prefix": "tnbc",
+        "body": [
+            "import { Request, Response} from 'express'",
+            "export class ${TM_FILENAME_BASE/.*[\\\\\\/](.*)$/$1/}{",
+            "   async handle(request: Request, response: Response): Promise<Response>{",
+            "   }",
+            "}"
+        ],
+        "description": "Create the base structure for a controller use Express"
+    },
+    "Typescript React Base Component":{
+        "prefix": "trbc",
+        "body": [
+            "interface Props {",
+            "}",
+            " ",
+            "export function ${TM_FILENAME_BASE/.*[\\\\\\/](.*)$/$1/}(props : Props) {",
+            "    return <h1>Hello World<h1>" ,
+            "}"
+        ],
+        "description": "Create the base structure for a component in React with Typescript"
+    },
+    "Vue Javascript Base Component":{
+        "prefix": "vjbc",
+        "body": [
+            "<template>",
+            "</template>",
+            "<script>",
+            "export default {",
+            "};",
+            "</script>",
+            "<style lang='scss' scoped>",
+            "</style>",
+        ],
+        "description": "Create base structure for a components using VueJS"          
+    }
+
+}
