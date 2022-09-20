@@ -3,8 +3,10 @@
         "prefix": "tnbc",
         "body": [
             "import { Request, Response} from 'express'",
+            " ",
             "export class ${TM_FILENAME_BASE/.*[\\\\\\/](.*)$/$1/}{",
             "   async handle(request: Request, response: Response): Promise<Response>{",
+            "       return response.status(200).json({message: 'Sucesso'})",
             "   }",
             "}"
         ],
@@ -16,8 +18,8 @@
             "interface Props {",
             "}",
             " ",
-            "export function ${TM_FILENAME_BASE/.*[\\\\\\/](.*)$/$1/}(props : Props) {",
-            "    return <h1>Hello World<h1>" ,
+            "export function  ${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}(props : Props) {",
+            "    return <h1>Hello World</h1>" ,
             "}"
         ],
         "description": "Create the base structure for a component in React with Typescript"

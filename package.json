@@ -2,8 +2,25 @@
   "name": "ht-snippets",
   "displayName": "ht_snippets",
   "description": "Snippets for base components with Node, React or Vue",
+  "publisher": "HenriqueTardivo",
   "version": "1.0.0",
-  "icon": "./assets/HT.png",
+  "icon": "assets/icon.png",
+  "author": {
+    "email": "henrique.tardivo@gmail.com",
+    "name": "Henrique Tardivo"
+  },
+  "keywords": [
+    "vscode",
+    "react",
+    "typescript",
+    "node",
+    "express",
+    "vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HenriqueTardivo/ht_snippets.git"
+  },
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -13,8 +30,7 @@
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
+         "path": "./snippets/snippets.code-snippets"
       }
     ]
   }
